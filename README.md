@@ -1,4 +1,4 @@
-![FINAL first page](https://github.com/Gl-RDN/Rockbuster-Stealth-Data-Analysis/assets/124837500/f1b2909a-7e3d-4c60-9165-05c938758d09)
+![FINAL first page](https://github.com/Gl-RDN/Rockbuster-Stealth-Data-Analysis/assets/124837500/3394a18c-2bf1-4e19-b006-9f9f194f2d7e)
 
 **Introduction**:
 Rockbuster Stealth LLC, a former movie rental company, is adapting to the digital age by launching an online video rental service. As a data analyst hired by Rockbuster's Business Intelligence (BI) department, your role is crucial in devising a strategic launch plan. By leveraging SQL to analyze data, you'll provide insights to various departments, aiding in informed decision-making.
