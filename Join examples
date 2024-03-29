@@ -1,0 +1,31 @@
+# Number of countries, number of customers registered with each store and the registered customers revenue
+SELECT   store_id,
+               COUNT(DISTINCT country) AS number_of_countries,
+               COUNT(DISTINCT B.customer_id) AS number_of_customers,
+               SUM(amount) AS registered_customer_revenue
+FROM payment A
+INNER JOIN customer B ON A.customer_id = B.customer_id
+INNER JOIN address C ON B.address_id = C.address_id
+INNER JOIN city D ON C.city_id = D.city_id
+INNER JOIN country E ON D.country_id = E.country_id
+GROUP BY store_id
+ORDER BY  number_of_countries DESC
+
+# Top 20 films by revenue   
+SELECT title AS film_title,
+             name AS film_genre,
+             rating AS film_rating,
+             rental_rate,
+             SUM(amount) AS total_revenue
+FROM payment A
+INNER JOIN rental B ON A.rental_id = B.rental_id
+INNER JOIN inventory C ON B.inventory_id = C.inventory_id
+INNER JOIN film D ON C.film_id = D.film_id
+INNER JOIN film_category E ON D.film_id = E.film_id
+INNER JOIN category F ON E.category_id = F.category_id
+GROUP BY title,
+                  name,
+                  rating,
+                  rental_rate
+ORDER BY total_revenue ASC
+LIMIT 20
