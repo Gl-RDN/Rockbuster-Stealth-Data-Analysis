@@ -19,11 +19,12 @@ data set encompassing Rockbuster's film inventory, customer profiles, and paymen
 
 -[Rockbuster Stealth LLC Data Set](http://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip)
 
-Final Analysis Criteria:
+**Final Analysis Criteria**:
 - SQL queries to address business inquiries effectively.
 - Visualizations for managerial consumption.
 - Translate SQL results into formats accessible to technical colleagues, such as Excel and data dictionaries.
 - Develop a professional project for portfolio showcase, highlighting your analytical prowess and project management skills.
 
 **Visualizations**: Chech out the [Tableau Dashboard](https://public.tableau.com/app/profile/gal.erdene.gantulga/viz/RockbusterSteathAData-drivenApproachtoDigitalExpansion/Rockbuster?publish=yes) for interactive insights.
-****Final Project PDF**: Detailed report in the Final Project PDF
+
+**Final Project PDF**: Detailed report in the Final Project PDF
