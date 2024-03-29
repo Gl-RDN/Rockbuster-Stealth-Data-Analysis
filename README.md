@@ -1,3 +1,4 @@
+![FINAL first page](https://github.com/Gl-RDN/Rockbuster-Stealth-Data-Analysis/assets/124837500/f1b2909a-7e3d-4c60-9165-05c938758d09)
 
 
 ## **Project Overview**: Rockbuster Stealth Data Analysis
