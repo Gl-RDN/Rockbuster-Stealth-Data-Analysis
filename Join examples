@@ -11,6 +11,8 @@ INNER JOIN country E ON D.country_id = E.country_id
 GROUP BY store_id
 ORDER BY  number_of_countries DESC
 
+---------------------------------------------------------------------------------------------------------------
+
 # Top 20 films by revenue   
 SELECT title AS film_title,
              name AS film_genre,
@@ -29,3 +31,17 @@ GROUP BY title,
                   rental_rate
 ORDER BY total_revenue ASC
 LIMIT 20
+
+------------------------------------------------------------------------------------------------------------------
+
+# To find the total revenue and number of films rented by genre
+SELECT name AS film_genre,
+       SUM(amount) AS total_revenue,
+       COUNT(DISTINCT B.inventory_id) AS film_count
+FROM payment A
+INNER JOIN rental B ON A.rental_id = B.rental_id
+INNER JOIN inventory C ON B.inventory_id = C.inventory_id
+INNER JOIN film_category D ON C.film_id = D.film_id
+INNER JOIN category E ON D.category_id = E.category_id
+GROUP BY name
+ORDER BY total_revenue DESC
